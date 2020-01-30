@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Dental Floss</title>
+		<link rel="stylesheet" href="./CSS/one_page_website.css">
+	</head>
+	<body>
+		<!-- Nav -->
+		<div>
+			<div>
+				<ul>
+					<a href="#home" id="link"><li>HOME</li></a>
+					<a href="#gallery" id="link"><li>GALLERY</li></a>
+					<a href="#contact" id="link"><li>CONTACT</li></a>
+					<a href="#video" id="link"><li>VIDEO</li></a>
+				</ul>
+			</div>
+		</div>
+		<!--End NAV-->
+		
+		<!--Home-->
+		<div id="home">
+			<div>
+				<div>
+					<p><h1>Dental floss</h1></p>
+				</div>
+			</div>
+		</div>
+		<!--END HOME-->
+		
+		<!--GALLERY-->
+		<section>
+			<div id="gallery">
+				<h1>Gallery</h1>
+					<div>
+						<div class="row">
+							<div class="column">
+							  	<img src="./Images//thumb/thumb_1.jpg" onclick="openModal();currentSlide(1)" style="width:300px;height:200px;" class="hover-shadow">
+							</div>
+							<div class="column">
+							  	<img src="./Images//thumb/thumb_2.jpg" onclick="openModal();currentSlide(2)" style="width:300px;height:200px;" class="hover-shadow">
+							</div>
+							<div class="column">
+							 	<img src="./Images/thumb/thumb_3.jpg" onclick="openModal();currentSlide(3)" style="width:300px;height:200px;" class="hover-shadow">
+							</div>							
+						</div>
+						  
+						
+						<div id="myModal" class="modal">
+							<span class="close cursor" onclick="closeModal()">&times;</span>
+							<div class="modal-content">
+						  
+							  	<div class="mySlides">
+									<div class="numbertext">1 / 3</div>
+									<img src="./Images/thumb/thumb_1.jpg" style="width:500px;height:400px;">
+							  	</div>
+						  
+								<div class="mySlides">
+									<div class="numbertext">2 / 3</div>
+									<img src="./Images/thumb/thumb_2.jpg" style="width:500px;height:400px;">
+								</div>
+							
+								<div class="mySlides">
+									<div class="numbertext">3 / 3</div>
+									<img src="./Images/thumb/thumb_3.jpg" style="width:500px;height:400px;">
+								</div>						
+															
+								
+								<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+								<a class="next" onclick="plusSlides(1)">&#10095;</a>
+							
+								<!-- Caption text -->
+								<div class="caption-container">
+									<p id="caption"></p>
+								</div>							
+								
+								<div class="column">
+									<img class="demo" src="./Images/thumb/thumb_1.jpg" style="width:500px;height:400px;" onclick="currentSlide(1)" alt="floss 1">
+								</div>
+							
+								<div class="column">
+									<img class="demo" src="./Images/thumb/thumb_2.jpg" style="width:500px;height:400px;" onclick="currentSlide(2)" alt="floss 2">
+								</div>
+							
+								<div class="column">
+									<img class="demo" src="./Images/thumb/thumb_3.jpg" style="width:500px;height:400px;" onclick="currentSlide(3)" alt="floss 3">
+								</div>							
+								
+							</div>
+						  </div>
+					</div>
+				</div>
+		</section>
+		<!--END GALLERY-->
+		
+		<!--VIDEO-->
+		<div id="video">
+			<h1>Video</h1>
+				<div>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/m3pBA4cgdxw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+		</div>
+		<!--END VIDEO-->
+		<!--RSVP-->
+		<section>
+			<div id="contact">
+				<div>
+					<h1>Contact</h1>
+					<div>
+						<p>
+							Please provide us with your basic contact information and we will try to get back to you
+						</p>
+						<div>
+							<form action="" method="post">
+								<input class="rsvp" type="text" value="First Name">
+								<input class="rsvp" type="text" value="Last Name">
+								<input class="rsvp" type="text" value="Email Address">
+								<input class="rsvp" type="text" value="Phone Number">
+								<div class="form-spacer">
+									<label class="terms">Terms and Conditions</label>
+								</div>
+								<div>
+									<input type="submit" value="Submit">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--END RSVP-->
+		<!--Footer-->
+			<footer>
+				<p>dentalfloss.com &copy;</p>
+			</footer>
+		<!--END FOOTER-->
+		<script src="./JS/one_page_website.js"></script>
+	</body>
+</html>
